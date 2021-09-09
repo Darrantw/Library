@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Library</title>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="navbar">
+        <h1 class="title">Darran's Library</h1>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="new-book-btn">New book</div>
+    <section class="form">
+      <form class="new-book" >
+        <fieldset>
+          <h3>Enter the following details to add a book to the library</h3>
+          <div>
+            <label for="book-title">
+              Title:
+            </label>
+            <input type="text" name="book-title" class="book-details" id="book-title" value="Title" required>
+            <label for="book-author">
+              Author:
+            </label>
+            <input type="text" name="book-author" class="book-details" id="book-author" required>
+            <label for="book-pages">
+              Pages:
+            </label>
+            <input type="number" name="book-pages" class="book-details" id="book-pages" required>
+            <label for="book-read">
+              Read:
+            </label>
+            <select name="read?" id="read">
+              <option value = "" selected >Choose here</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+            <input type="button" id="book-adder" value="Add Book">
+            </div>
+        </fieldset>
+      </form>
+    </section>
+    <section class="table">
+      <table class="library-table">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Pages</th>
+            <th scope="col">Read?</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

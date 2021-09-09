@@ -1,0 +1,51 @@
+body {
+/*  background-image: url(images/ed-robertson-eeSdJfLfx1A-unsplash.jpg); */
+}
+
+/* ================ RESET ================ */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+/* ================ HEADER ================ */
+
+.navbar {
+  display: fixed;
+  flex-direction: row;
+  width: 100vw;
+  height: 90px;
+  background-color: pink;
+  justify-content: center;
+}
+.title {
+  font-family: serif;
+  font: 200px/200px;
+ 
+}
+
+/* ================ MAIN ================ */
+.new-book-btn {
+  height: 200px;
+  width: 200px;
+  border-radius: 4px;
+  background-color: aqua;
+  font-weight: 700;
+  font: 50px/70px;
+}
+
+.new-book {
+  display: none;
+}
+
+#add-book {
+  height: 250px;
+  width: auto;
+  background-color: blue;
+}
