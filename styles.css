@@ -13,39 +13,121 @@ body {
 body {
   height: 100vh;
   width: 100vw;
+  background-image: url(images/background.jpeg);
+}
+
+.overlay {
+  background-color: hsla(0, 0%, 63%, 0.5);
+  height: 100vh;
+  
 }
 /* ================ HEADER ================ */
 
-.navbar {
+.title-contianer {
   display: fixed;
   flex-direction: row;
   width: 100vw;
   height: 90px;
-  background-color: pink;
   justify-content: center;
 }
 .title {
+  background-color: hsla(0, 0%, 93%, 0.5);
   font-family: serif;
+  text-align: center;
+  font-size: 4em;
   font: 200px/200px;
- 
+  
 }
 
 /* ================ MAIN ================ */
 .new-book-btn {
-  height: 200px;
-  width: 200px;
+  height: 5vh;
+  width: 5vw;
   border-radius: 4px;
   background-color: aqua;
   font-weight: 700;
   font: 50px/70px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 5px;
+  height: 120%;
 }
 
 .new-book {
   display: none;
+  height: 12vh;
+  width: 22vw;
+  background-color: rgb(159, 196, 28);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  float: left;
 }
 
-#add-book {
-  height: 250px;
-  width: auto;
+.book-adder {
   background-color: blue;
+  color: antiquewhite;
+}
+.books {
+  clear: left;
+  margin-top: 14px;
+}
+
+.books-container {
+  width: 49vw;
+  margin-top: 15px;
+  /* height: 80vh; */
+  /* background-color: saddlebrown; */
+  display: flex;
+  justify-content: start;
+  padding: 0;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.read {
+  float: left;
+}
+
+.unread {
+  float: right;
+}
+
+h1, h2 {
+  font-size: 1em;
+}
+
+.open {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
+}
+
+.focus {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 2;
+}
+
+.focus.open {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.focus-inner {
+  background: white;
+  width: 700px;
+  padding: 20px;
+}
+
+.delete-btns {
+  margin-left: 33%;
+  margin-bottom: 20%
 }
