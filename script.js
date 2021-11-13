@@ -1,14 +1,13 @@
 let readLibrary = [];
 let unreadLibrary = [];
 
-function Book(title, author, read, pages) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-  this.info = function() {
-     return `${title}, ${author}, ${this.read}, ${pages}`
-}
+class Book {
+    constructor(title, author, read, pages) {
+    this.title = title;
+    this.author = author;
+    this.read = read;
+    this.pages = pages;
+    }
 };
 // Main Elements: buttons + form //
 const newBook = document.querySelector('.new-book-btn')
@@ -16,7 +15,6 @@ const form = document.querySelector('.new-book')
 const addBook = document.querySelector('.book-adder')
 const addRow = document.querySelector('#row-adder')
 const readButton = document.querySelector('read')
-const table = document.querySelector('.library-table');
 
 // Containers
 const readBooksContainer = document.querySelector('.read');
@@ -50,7 +48,6 @@ if (author == '') {
   alert("Please enter an author")
   return;
 }
-console.log('I dont stop')
 form.style.display = 'none'
 var book = new Book(title, author, read, pages);
   if (title && author) {
